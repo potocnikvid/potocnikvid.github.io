@@ -1,2 +1,2 @@
-# vidpotocnik.github.io
+# vidpotocnik
 Website.
