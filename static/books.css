@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    font-family: Inconsolata, Helvetica;
+    font-size: 12pt;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background-color: rgba(215, 185, 228, 0.35);
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    min-height: 100vh;
+}
+#title {
+    font-weight: bold;
+    text-align: center; 
+}
+#pantone {
+    position: fixed; 
+    bottom: 10px;
+    right: 30px;
+    color: rgba(215, 185, 228);
+}
+
+.kit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.kit p {
+    color: rgba(0, 0, 0, .84);
+}
+.kit p a {
+    background: linear-gradient(to bottom,rgba(0,0,0,.68) 50%,rgba(0,0,0,0) 50%);
+    background-size: 2px 2px;
+    background-position: 0 19.26px;
+    background-repeat: repeat-x;
+    color: rgba(0, 0, 0, .84);
+}
+.kit__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    width: 100%;
+}
+@media screen and (min-width: 960px) {
+    .kit__content {
+        max-width: 600px;
+        min-width: 500px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.kit__header {
+    margin-bottom: 50px;
+}
+.kit__title {
+    color: rgba(0,0,0,.84);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    line-height: 1.04;
+    margin-bottom: 28px;
+    margin-top: 0;
+}
+.kit__description {
+    font-size: 18px;
+    letter-spacing: -.003em;
+    line-height: 1.4;
+}
+.kit__recommendation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+}
+.kit__recommendation-image {
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 270px;
+    width: 100%;
+}
+.kit__recommendation-name-header {
+    margin: 0;
+}
+.kit__recommendation-name {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.84),rgba(0,0,0,.84));
+    background-position: 0 30px;
+    background-repeat: repeat-x;
+    background-size: 2px .115em;
+    color: rgba(0,0,0,.84);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    line-height: 1.15;
+    text-decoration: none;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+.kit__recommendation-description {
+    font-size: 18px;
+    letter-spacing: -.003em;
+    line-height: 1.4;
+    margin-bottom: 0;
+    margin-top: 18px;
+    white-space: pre-wrap;
+}
+.kit__recommendation-link {
+    font-size: 18px;
+    letter-spacing: -.003em;
+    line-height: 1.4;
+    margin-bottom: 0;
+    margin-top: 24px;
+    text-decoration: none;
+}
