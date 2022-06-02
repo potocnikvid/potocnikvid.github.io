@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>tictactoe</title>
+        <link rel="stylesheet" href="../static/tictactoe.css">
+        <script type="text/javascript" src="../scripts/script.js"></script>
+    </head>
+    <body>
+      <zacetek id="zacetekId">
+          <div class="vnosPodatkov zacetek">
+              <label for="imePrvi"><b>Prvi</b> igralec: </label><input type="text" name="imePrvi" id="imePrvi" placeholder="... IME ..." autocomplete="on" required>
+              <label for="imeDrugi"><b>Drugi</b> igralec: </label><input type="text" name="imeDrugi" id="imeDrugi" placeholder="... IME ..." autocomplete="on" required><br><br><br>
+              <input type="button" id="zacetekIgre" value="NAJ SE KONEC PRIČNE" onclick="zacetekIgre()">
+          </div>
+      </zacetek>
+        <!-- Igralno polje: -->
+        <igralnoPolje id="igralnoPolje">
+            <p>Odločitev svojega življenja izbira: <br><span id="naPotezi"></span></p>
+            <table>
+                    <tr class="vrstica">
+                        <td class="celica" id="0"></td>
+                        <td class="celica" id="1"></td>
+                        <td class="celica" id="2"></td>
+                    </tr>
+                    <tr class="vrstica">
+                        <td class="celica" id="3"></td>
+                        <td class="celica" id="4"></td>
+                        <td class="celica" id="5"></td>
+                    </tr>
+                    <tr class="vrstica">
+                        <td class="celica" id="6"></td>
+                        <td class="celica" id="7"></td>
+                        <td class="celica" id="8"></td>
+                    </tr>
+            </table>
+        </igralnoPolje>
+        <!-- Zmagovalec -->
+        <konec id="konec">
+            <div class="zmagovalec">
+                Zmagovalec IGRE, katere si večina sploh NE upa zaigrati je:<br><br><span id="zmagovalec"></span><br><br>
+                <!-- Ponovna igra -->
+                <button type="button" id="ponovnaIgra">Ponovna Igra</button>
+            </div>
+        </konec>
+        <script type="text/javascript" src="../scripts/script.js"></script>
+    </body>
+</html>
